@@ -1,0 +1,70 @@
+@use "../../styles/variables.scss";
+
+.post-detail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  min-height: 50vh;
+
+  h3 {
+    font-weight: 200;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  img {
+    width: 900px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: variables.$border-radius-default;
+  }
+
+  p,
+  img {
+    margin-bottom: 2rem;
+  }
+
+  a {
+    text-align: center;
+    padding: variables.$padding-default 3rem;
+    border-radius: variables.$border-radius-default;
+    width: max-content;
+    font-size: 1.6rem;
+    color: variables.$colorPrimary;
+    background-color: variables.$colorSuccess;
+    transition: background-color 500ms ease;
+
+    &:hover {
+      background-color: variables.$color4;
+    }
+  }
+}
+
+.no-posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-weight: 200;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  a {
+    text-align: center;
+    padding: variables.$padding-default 3rem;
+    border-radius: variables.$border-radius-default;
+    width: max-content;
+    font-size: 1.6rem;
+    color: variables.$colorPrimary;
+    background-color: variables.$colorSuccess;
+    transition: background-color 500ms ease;
+
+    &:hover {
+      background-color: variables.$color4;
+    }
+  }
+}

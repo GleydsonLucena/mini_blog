@@ -1,0 +1,30 @@
+@use "../../styles/variables.scss";
+
+.create-post {
+  text-align: center;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: variables.$border-radius-default;
+
+  h2 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+    color: variables.$color3;
+  }
+}
+
+.form {
+  max-width: 40rem;
+  margin: 0 auto;
+  button {
+    &:hover {
+      background-color: variables.$colorSuccess;
+    }
+  }
+}

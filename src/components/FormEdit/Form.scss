@@ -1,0 +1,18 @@
+.previw-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 1px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+}

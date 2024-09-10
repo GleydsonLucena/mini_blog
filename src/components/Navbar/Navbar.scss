@@ -1,0 +1,42 @@
+@use "../../styles/variables.scss";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  margin: 0 auto;
+  box-shadow: 0.1rem 0.1rem 1rem variables.$color3;
+  background-color: variables.$colorPrimary;
+
+  .active {
+    border-radius: variables.$border-radius-default;
+    background-color: variables.$color3;
+  }
+
+  & a {
+    font-size: 3rem;
+    font-weight: 300;
+
+    & span {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  & ul {
+    display: flex;
+    gap: 1rem;
+
+    & li a {
+      font-size: 1.7rem;
+      text-decoration: none;
+      padding: variables.$padding-default;
+      transition: background-color 0.3s ease;
+    }
+
+    & a:hover {
+      border-radius: variables.$border-radius-default;
+      background-color: variables.$color3;
+    }
+  }
+}

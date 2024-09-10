@@ -1,0 +1,91 @@
+@use "../../styles/variables.scss";
+
+.Dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+
+  h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+
+    thead {
+      background-color: rgb(240, 240, 240);
+      border-radius: variables.$border-radius-default;
+      text-align: center;
+
+      th {
+        font-size: 2rem;
+        font-weight: bold;
+        width: max-content;
+        padding: variables.$padding-default calc(variables.$padding-default * 5);
+      }
+    }
+
+    tbody {
+      tr {
+        text-align: center;
+        border: 1px solid rgb(240, 240, 240);
+        padding: 1rem;
+
+        td {
+          font-size: 1.6rem;
+          width: max-content;
+
+          &:nth-child(3) {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .edit {
+    background-color: variables.$color4;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    height: 100%;
+    color: variables.$colorPrimary;
+    background-color: variables.$colorSuccess;
+    transition: background-color 500ms ease;
+
+    &:hover {
+      opacity: 0.9;
+      transition: opacity 500ms ease;
+    }
+  }
+
+  button {
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    font-size: 1.6rem;
+    border-radius: 0;
+    transition: background-color 500ms ease;
+
+    &:hover {
+      background-color: variables.$color4;
+    }
+  }
+
+  .delete {
+    background-color: variables.$colorError !important;
+
+    &:hover {
+      background-color: #d1061ab9 !important;
+    }
+  }
+}

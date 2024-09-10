@@ -1,0 +1,27 @@
+@use "../../styles/variables.scss";
+
+.editPost {
+  text-align: center;
+  border: 0.1rem solid variables.$color3;
+  padding: 2rem;
+  border-radius: variables.$border-radius-default;
+
+  h2 {
+    display: block;
+    font-size: 3rem;
+    margin: variables.$mg-default;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    span {
+      display: block;
+    }
+  }
+
+  button {
+    &:hover {
+      background-color: variables.$colorSuccess;
+      color: variables.$colorPrimary;
+    }
+  }
+}

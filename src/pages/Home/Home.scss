@@ -1,0 +1,42 @@
+@use "../../styles/variables.scss";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 77vh;
+  min-width: 100%;
+
+  h2 {
+    font-size: 5rem;
+    margin: 3rem;
+  }
+
+  .form {
+    flex-direction: row;
+
+    label {
+      margin: 0;
+
+      & span {
+        display: none;
+      }
+    }
+
+    button {
+      margin-left: 1rem;
+    }
+  }
+
+  .posts-container {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+
+    margin-top: 3rem;
+    width: 100%;
+    min-height: 50vh;
+  }
+}

@@ -1,0 +1,99 @@
+@use "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: variables.$font-default;
+  list-style-type: none;
+  text-decoration: none;
+  color: variables.$colorSecondary;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: variables.$font-default;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: variables.$color5;
+}
+
+button,
+a {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+button {
+  text-align: center;
+  padding: variables.$padding-default;
+  border-radius: variables.$border-radius-default;
+  font-size: 1.6rem;
+  color: variables.$colorPrimary;
+  background-color: variables.$color5;
+  transition: background-color 500ms ease;
+
+  &:hover {
+    background-color: variables.$color4;
+  }
+
+  &[disabled] {
+    background-color: #d0cfcf;
+    cursor: not-allowed;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: variables.$padding-default;
+    font-size: 1.2rem;
+
+    span {
+      text-align: start;
+    }
+
+    input,
+    textarea {
+      text-align: start;
+      border: none;
+      border-bottom: 0.2rem solid variables.$color3;
+      padding: variables.$padding-default;
+      border-radius: variables.$border-radius-default;
+      margin-bottom: variables.$mg-default;
+
+      &:focus {
+        outline: none;
+        border-color: variables.$colorSuccess;
+      }
+    }
+  }
+
+  .error {
+    background-color: variables.$colorError;
+    color: white;
+    padding: variables.$padding-default;
+    margin-top: variables.$mg-default;
+    border-radius: variables.$border-radius-default;
+  }
+}

@@ -1,0 +1,37 @@
+@use "../../styles/variables.scss";
+
+.not-found {
+  text-align: center;
+  height: 60vh;
+  color: variables.$colorSecondary;
+
+  h1 {
+    font-size: 10rem;
+    margin-bottom: 3rem;
+    color: variables.$colorError;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  a {
+    text-align: center;
+    padding: variables.$padding-default 3rem;
+    border-radius: variables.$border-radius-default;
+    font-size: 1.6rem;
+    color: variables.$colorPrimary;
+    background-color: variables.$colorSuccess;
+    transition: background-color 500ms ease;
+
+    &:hover {
+      background-color: variables.$color4;
+    }
+  }
+}
