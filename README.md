@@ -37,15 +37,7 @@
 ## Demonstração Home:
 
 <div style="margin-bottom: 3rem">
-  <img width="100px" src="./public/images/home.png"/>
-</div>
-
-<br>
-
-## Demonstração Posts:
-
-<div style="margin-bottom: 3rem">
-  <img width="100%" src="./public/images/post.png"/>
+  <img width="100%" src="./public/images/home.png"/>
 </div>
 
 <br>
